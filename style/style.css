@@ -194,7 +194,7 @@ body {
 }
 
 .local {
-    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(/image/hrz-1.jpg);   
+    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(../image/hrz-1.jpg);   
     background-position: center;
     background-size: cover;
     height: 60vh;
@@ -350,7 +350,7 @@ body {
 .inscricao {
     width: 100%;
     height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(/image/hrz-6.jpg);   
+    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(../image/hrz-6.jpg);   
     background-position: center;
     background-size: cover;
     display: flex;
