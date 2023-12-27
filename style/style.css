@@ -31,7 +31,7 @@ body {
     height: auto;
     padding: 20px 0px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(/image/hrz-5.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url("/image/hrz-5.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
