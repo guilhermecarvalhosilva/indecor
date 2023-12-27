@@ -1,0 +1,641 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-padrao: 'Poppins', sans-serif;
+    --cor-primaria: #eb1ccc;
+    --cor-secundaria: #95989a;
+    --text-primaria: #000;
+    --text-secundaria: #5d5d5d;
+    --cor-escrita: #fff;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--font-padrao);
+}
+
+body {
+    max-width: 2000px;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+
+.evento {
+    height: auto;
+    padding: 20px 0px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(/image/hrz-5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;   
+    color: var(--cor-escrita);
+}
+
+.evento-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px 0px;
+}
+
+.evento-dados > .titulo {
+    color: var(--cor-primaria);
+    font-size: 4em;
+}
+
+.evento-dados > .subTitulo {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    width: 100%;
+}
+
+.dados > p{
+    font-size: 1.3em;
+}
+
+.dados > span {
+    font-size: 1.3em;
+    color: var(--cor-primaria);
+}
+
+.evento-form {
+    background-color: var(--cor-secundaria);
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px;
+}
+
+.evento-form > .titulo {
+    width: 80%;
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+.evento-form > .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+    width: 80%;
+}
+
+.form > .form-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px 0px;
+    width: 100%;
+}
+
+.form-campo > label {
+    font-size: 1.1em;
+}
+
+.form-campo > [type="text"], 
+.form-campo > [type="email"], 
+.form-campo > [type="number"],
+.form-campo > select
+ {
+    width: 100%;
+    height: 35px;    
+    outline: none;
+    border: none;
+    text-indent: 5px;
+    border-radius: 5px;
+}
+
+.form > [type="submit"] {
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 40px;    
+    outline: none;
+    border: none;
+    color: var(--cor-escrita);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+
+.form > [type="submit"]:hover {
+    background-color: var(--cor-escrita);
+    color: var(--cor-primaria);
+} 
+
+
+.aprender {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aprender > .aprender-titulo {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+}
+
+.aprender-titulo > h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.aprender > .aprender-item {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.aprender-item > .campo {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+.campo > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.campo > span{
+    max-width: 250px;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--text-secundaria);
+}
+
+.local {
+    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(/image/hrz-1.jpg);   
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.local > .local-endereco {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.local-endereco > i {
+    color: var(--cor-primaria);
+    font-size:6em;
+}
+
+.local-endereco > p {
+    color: var(--cor-escrita);
+    font-size: 1.5em;
+    max-width: 220px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.local > .local-destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    max-width: 500px;
+}
+
+.local-destaque > h4 {
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1em;
+    width: 80%;
+}
+
+
+.local-destaque > p {
+    color: var(--cor-escrita);
+    font-size: 1.1em;
+    width: 80%;
+}
+
+
+.ambientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px 0px;
+    height: 170vh;
+}
+
+.ambientes > .ambientes-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.ambientes-titulo > img {
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.ambientes-titulo > h4 {
+    font-size: 3em;
+    max-width: 450px;
+    width: 100%;
+}
+
+.ambientes > .ambientes-detalhes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.ambientes-detalhes > .lista {
+    max-width: 450px;
+    width: 100%;
+    
+}
+
+.ambientes-detalhes .lista > .lista-titulo {
+    font-size: 3em;
+    text-indent: 20px;
+}
+
+.ambientes-detalhes .lista > .lista-item {
+    list-style-position: inside;
+}
+
+.ambientes-detalhes .lista-item > li {
+    font-size: 1.3em;
+}
+
+.ambientes-detalhes > img {
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.ambientes-objetivos {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.ambientes-objetivos > img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.ambientes-objetivos > .lista {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+
+.ambientes-objetivos .lista > .lista-titulo {
+    font-size: 3em;
+    text-indent: 20px;
+}
+
+.ambientes-objetivos .lista > .lista-item {
+    list-style-position: inside;
+}
+
+.ambientes-objetivos .lista-item > li {
+    font-size: 1.3em;
+}
+
+.inscricao {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(0, 0, 0, 0.708)), url(/image/hrz-6.jpg);   
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 0px;
+}
+
+.inscricao > .inscricao-titulo {
+    color: var(--cor-escrita);
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.inscricao > .inscricao-botao {
+    background-color: var(--cor-primaria);
+    outline: none;
+    border: none;
+    max-width: 400px;
+    width: 100%;
+    height: 45px;
+    font-size: 1em;
+    color: var(--cor-escrita);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.rodape {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0px;
+}
+
+.rodape > .rodape-titulo {
+    font-size: 2.5em;
+    color: var(--text-secundaria);
+}
+
+.rodape > .rodape-paragrafo {
+    color: var(--text-secundaria);
+    font-size: 1.2em;
+}
+
+.rodape > .contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.contato > .contato-item {
+    color: var(--text-secundaria);
+}
+
+.contato-item > span {
+    font-weight: bold;
+    color: var(--text-secundaria);
+}
+
+
+@media (max-width: 1300px) {
+    .ambientes {
+        gap: 60px 0px;
+        height: auto;
+        padding: 20px 10px;
+    }
+    
+    .ambientes > .ambientes-titulo {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px 0px;
+    }
+
+    .ambientes-titulo > h4 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .ambientes > .ambientes-detalhes {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px 0px;
+    }
+    
+    .ambientes-detalhes > .lista {
+        text-align: center;   
+    }
+
+    .ambientes-objetivos {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px 0px;
+    }
+
+    .ambientes-objetivos > .lista {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1000px) {
+   .evento {
+        flex-direction: column;
+        height: auto;
+        gap: 50px 0px;
+        padding: 20px 10px;
+   }
+
+   .evento-dados {
+        text-align: center;
+    }
+
+    .evento-dados > .subTitulo {
+        margin: auto;
+    }
+
+    .evento-form > .titulo {
+        text-align: center;
+    }
+
+    .aprender {
+        height: auto;
+    }
+
+    .aprender > .aprender-item{
+        height: auto;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .local {
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px 0px;
+        height: auto;
+        padding: 50px 10px;
+    }
+
+    .local > .local-destaque {
+        align-items: center;
+    }
+
+    .local-destaque > h4 {
+        text-align: center;
+    }
+    
+    
+    .local-destaque > p {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 650px) {
+
+
+    .inscricao > .inscricao-titulo {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .inscricao > .inscricao-botao {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .evento-dados > .titulo {
+        font-size: 3em;
+    }
+
+    .evento-dados > .subTitulo {
+        font-size: 1.7em;
+        text-transform: uppercase;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .dados > p{
+        font-size: 1.1em;
+    }
+
+    .dados > span {
+        font-size: 1.1em;
+        color: var(--cor-primaria);
+    }
+
+    .evento-form > .titulo {
+        width: 85%;
+        font-size: 1.5em;
+    }
+
+    .aprender-titulo > h3{
+        font-size: 1.3em;
+    }
+
+    .campo > img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .local > .local-endereco {
+        flex-direction: column;
+        gap: 10px 0px;
+    }
+    
+    .local-endereco > i {
+        font-size:5em;
+    }
+    
+    .local-endereco > p {
+        font-size: 1.2em;
+    }
+    
+
+    .local-destaque > h4 {
+       font-size: 2.5em;
+    }
+    
+    
+    .local-destaque > p {
+        font-size: 1em;
+    }
+
+    .ambientes-titulo > h4 {
+        font-size: 2.5em;
+    }
+    
+
+    .ambientes-detalhes .lista > .lista-titulo {
+        font-size: 2.5em;
+    }
+
+    .ambientes-objetivos .lista > .lista-titulo {
+        font-size: 2.5em;
+    }
+    
+    .inscricao > .inscricao-titulo {
+        font-size: 1.8em;
+    }
+
+    .rodape > .rodape-paragrafo {
+        text-align: center;
+        width: 90%;
+    }
+
+    .rodape > .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0px;
+        align-items: center;
+    }
+    
+    .contato > .contato-item {
+        text-align: center;
+    }
+    
+    .contato-item > span {
+        font-weight: bold;
+        text-align: center;
+    }
+    
+ }
+
+
+ @media (max-width: 300px) {
+    .aprender-titulo > h3{
+        font-size: 1.1em;
+    }
+
+    .local-destaque > h4 {
+        font-size: 2em;
+     }
+
+     .ambientes-titulo > h4 {
+        font-size: 2em;
+    }
+    
+     
+ }
