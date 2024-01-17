@@ -110,14 +110,13 @@ body {
 
 .form-campo > [type="text"], 
 .form-campo > [type="email"], 
-.form-campo > [type="number"],
 .form-campo > select
  {
     width: 100%;
     height: 35px;    
     outline: none;
     border: none;
-    text-indent: 5px;
+    text-indent: 10px;
     border-radius: 5px;
 }
 

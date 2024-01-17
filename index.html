@@ -26,17 +26,17 @@
                 <form class="form">
                     <p class="form-campo">
                         <label>Nome:</label>
-                        <input type="text" name="" id="" placeholder="Digite seu nome" required>
+                        <input type="text" placeholder="Digite seu nome" required>
                     </p>
 
                     <p class="form-campo">
                         <label>E-mail</label>
-                        <input type="email" name="" id="" placeholder="Digite o seu melhor e-mail" required>
+                        <input type="email" placeholder="Digite o seu melhor e-mail" required>
                     </p>
 
                     <p class="form-campo">
                         <label>Telefone:</label>
-                        <input type="number" name="" id="" placeholder="Digite seu nome" required>
+                        <input type="text" id="inputNum" maxlength="15" placeholder="Digite seu nome" required onkeypress="maskNum()">
                     </p>
 
                     <p class="form-campo">
@@ -144,5 +144,7 @@
             </p>
         </aside>
     </footer>
+
+    <script src="script/maskNum.js"></script>
 </body>
 </html>
