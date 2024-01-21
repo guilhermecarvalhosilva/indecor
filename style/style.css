@@ -366,6 +366,7 @@ body {
 }
 
 .inscricao > .inscricao-botao {
+    cursor: pointer;
     background-color: var(--cor-primaria);
     outline: none;
     border: none;
